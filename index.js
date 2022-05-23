@@ -1,122 +1,122 @@
-//1
-let x = 11, y = true, z = 'java script', q = '100';
-console.log(typeof x); //number
-console.log(typeof y); //boolean
-console.log(typeof z); //string
-console.log(typeof q); //string
 
-//1 function
+/*
+//что если я хочу скопировать один массив и вставить его в новый ка это сделать?
 
-// function task1(answer) {
-//     answer = prompt('enter something');
-//     console.log(typeof answer);
-// }
-// task1();
-
-//2
-// let greeting = 'Hello ', userName;
-// if (confirm('lets get acquainted')){
-//     userName = prompt('What is your name?');
-//     alert(greeting+ userName);
-// } else {
-//     alert('you canceled the action');
-// }
-
-//2function
-
-// function task2(greeting, userName) {
-//     let greeting="Hello "
-//     if (confirm('lets get acquainted')){
-//     userName = prompt('What is your name?');
-//     alert(greeting+ userName);
-// } else {
-//     alert('you canceled the action');
-// }
-// }
-// task2()
-
-//3
-let quater = 22;
-if (quater <= 15) {
-    console.log('the first quater');
-} else if (quater <= 30) {
-    console.log('second quater');
-} else if (quater <= 45) {
-    console.log('third quater');
-} else if (quater <= 59) {
-    console.log('forth quater')
-} else {
-    console.log('does not exist');
-}
-// function 3
-function task3(quater) {
-    if (quater <= 15) {
-    console.log('the first quater');
-} else if (quater <= 30) {
-    console.log('second quater');
-} else if (quater <= 45) {
-    console.log('third quater');
-} else if (quater <= 59) {
-    console.log('forth quater')
-} else {
-    console.log('does not exist');
-}
-}
-console.log(task3(5));
-
-//4
-
-for (num = 10; num <= 50; num++){
-    if(num%5==0){
-    console.log(num)};
-}
-// function 4
-function task4(minlim,maxlim) {
-    let num;
-    for (num = minlim; num <= maxlim; num++){
-    if(num%5==0){
-    console.log(num)};
-}  
+let task1 = ['liza', 'vasiliy', 'vadim'];
+let i;
+for (i = task1.length - 1; i >= 0;  i--){
+    console.log(task1[i]);
 }
 
-//5
- res5=5;
-for (lim1=5; res5 <= 12; lim1++){
-    res5 = lim1 * res5;
-
-}
-console.log(res5);
-//не уверена в правильности задания 5
-
-function task5(lim1, lim2) {
-    if (lim1 >= 5 && lim2 <= 12) {
-        result6 = lim1 * lim2;
+let task2 = [10, 20, 50, 100, 0, 0, 300, 0, 500, 600, 0, 0];
+let count=0;
+for (i = 0; i < task2.length; i++){
+    if (task2[i] == 0) {
+        console.log(i);
+        count += 1;
     }
 }
-task5(5, 6);
-// последнее задание 
 
-function menu(number) {
-    number = prompt(' enter task number');
-    if (number = 1) {
-        alert('Определите переменные со значениями 11, true, "java script", "100" и выведите их в консоль');
+for (i = 0; i < task2.length; i++){
+    if (task2[i] == 0) break;
+    console.log(task2[i]);
+    count++
+}
+
+for (i; i < task2.length-1; i++){
+    count = task2[i] + task2[i + 1];
+    console.log(count);
+}
+
+let arr = []; j; 
+for (i = 0; i < task2.length; i++){
+    count[j] = a[j] + task2[i + 1];
+}
+
+for (i = 0; i < task2.length; i++){
+    if (task2[i] == 0) break;
+    console.log(task2[i]);
+}
+
+let arrZeroIndexes = [];
+
+for (i = 0; i < task2.length; i++){
+    if (task2[i] == 0) {
+        arrZeroIndexes[] = i;
     }
-     else if (number = 2) {
-        alert('Создайте переменные greeting со значением...');
+} 
+*/
+
+
+
+// task 1
+function repeatMsg(countMaxMsg) {
+    countMaxMsg = prompt('Hi, enter some value');
+    let i;
+    for (i = 1; i <= countMaxMsg; i++){
+        console.log('*');
     }
-    else if(number = 3) {
-        alert('Определите в какую четверть часа попадает ввыденное количество мин');
+}
+
+//task2
+let arr = [50, 75, 2, 35, 55, 16, 100, 40, 97, 356, 899];
+lim1 = 10; lim2 = 300; i;
+function task2(arr){
+    for (i = lim1; i <= lim2; i++){
+        if (arr[i] % 5 == 0) {
+            console.log(arr[i]);
+        }
     }
-    else if (number = 4) {
-        alert(' Вывод чисел от 10 до 50, которые кратны 5');
+}
+
+//task3
+
+let summEvenNumber = 0;
+function task3(arr) {
+    for (i = 0; i <= arr[i]; i++){
+        if (arr[i] % 2 == 0) {
+            summEvenNumber += i;
+            console.log(summEvenNumber);
+        }
     }
-    else if (number = 5) {
-        alert('Найти произведение чисел в пределах от lim1 до lim2 ');
+}
+
+
+//task4
+function task4(arr) {
+    for (i = 0; i <= arr[i]; i++) {
+        if (arr[i] <= 10) {
+            arr[i] == 0;
+        }
+    }
+}
+
+//task5
+
+let wholeNumbers = [-4, 6, 10, 5, 8, -3, -5.3]; i;
+let finishedResult = [];
+function num(wholeNumbers) {
+    if (wholeNumbers[i] < 0) {
+        wholeNumbers[i] *= 1000;
+        finishedResult[wholeNumbers];
     }
     else {
-        alert('Задание 5 оформите функцией');
+        wholeNumbers[i] = i + ',0';
+        finishedResult[wholeNumbers];
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+    
 
 
 

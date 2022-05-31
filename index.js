@@ -9,7 +9,7 @@
 // }
 
 // //task2
- let array = [50, 75, 2, 35, 55, 1, 100, 40, 97, 356, 899];
+//  let array = [50, 75, 2, 35, 55, 1, 100, 40, 97, 356, 899];
 // function task2(arr) {
 //     let arr2 = [], j=0, i;
 //     for (i = 0; i < arr.length; i++){
@@ -71,6 +71,20 @@
 //         finishedResult[wholeNumbers];
 //     }
 // }
+
+// const words = ['hello', 'Vasya', 'Oh', 'fox', 'JS', 'array'];
+// function repeat(arr) {
+// 	let i;
+// 	if (i = 4) {
+// 		console.log(arr[i]);
+// 	}
+// }
+// console.log(every(repeat()))
+
+
+
+
+
 
 
 
